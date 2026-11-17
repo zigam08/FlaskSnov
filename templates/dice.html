@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Met kocke</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        }
+
+        .card {
+            width: 420px;
+            padding: 45px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #c4b5fd;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 90px;
+            font-weight: 800;
+            color: #a78bfa;
+            text-shadow: 0 0 30px rgba(167, 139, 250, 0.7);
+            animation: pop 0.5s ease;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>🎲 Met kocke</h1>
+        <p>Vrgel si:</p>
+        <div class="result">{{ kocka }}</div>
+    </div>
+</body>
+</html>
