@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dobrodošli 😊</title>
+    <title>Ljubezenski kalkulator</title>
 </head>
 <body>
-    
-    Tole je moja stran!
+
+    <form action="/ljubezen" method="post">
+        Ime 1:
+        <input type="text" name="ime1">
+        Ime 2:
+        <input type="text" name="ime2">
+
+        <br>
+
+        <button type="submit">Izračunaj</button>
+
+    </form>
+
+
+    {{ ime1 }} + {{ ime2 }} = {{ procent }} 
     <br>
-    <a href="/o-meni">O meni</a> 
+    {{ k }}
     <br>
-    <a href="/kocka">D6 kocka</a>
+    {{ zdruzenje }}
+    <br>
+    {{ nasvet }}
+
 </body>
 </html>
